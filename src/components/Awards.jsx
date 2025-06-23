@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const awards = [
-  {
+ 
+ {
     id: 1,
-    title: "Parivartan Award by Amway",
+    title: "Chandraprabha Saikiani Award (2024)",
     description:
-      "Received for significant contributions towards the development of women in society.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c", // Replace with actual award images if available
-  },
+      "Awarded by the Government of Assam on Bishnu Rabha Diwas, 2024, for outstanding social work for women and children.",
+    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+  }, 
   {
     id: 2,
     title: "Eastern Women Association Award",
@@ -16,12 +17,12 @@ const awards = [
       "Honored as the best NGO by the Eastern Women Association for impactful social work.",
     img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
   },
-  {
+ {
     id: 3,
-    title: "Chandraprabha Saikiani Award (2024)",
+    title: "Parivartan Award by Amway",
     description:
-      "Awarded by the Government of Assam on Bishnu Rabha Diwas, 2024, for outstanding social work for women and children.",
-    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+      "Received for significant contributions towards the development of women in society.",
+    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c", // Replace with actual award images if available
   },
   {
     id: 4,
