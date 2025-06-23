@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const awards = [
- 
- {
+  {
     id: 1,
     title: "Chandraprabha Saikiani Award (2024)",
     description:
       "Awarded by the Government of Assam on Bishnu Rabha Diwas, 2024, for outstanding social work for women and children.",
     img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
-  }, 
+    featured: true,
+  },
   {
     id: 2,
     title: "Eastern Women Association Award",
@@ -17,12 +17,12 @@ const awards = [
       "Honored as the best NGO by the Eastern Women Association for impactful social work.",
     img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
   },
- {
+  {
     id: 3,
     title: "Parivartan Award by Amway",
     description:
       "Received for significant contributions towards the development of women in society.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c", // Replace with actual award images if available
+    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
   },
   {
     id: 4,
@@ -52,27 +52,36 @@ const Awards = () => {
       id="awards"
       className="px-6 pb-20 max-w-7xl mx-auto text-gray-800 font-[Outfit,sans-serif]"
     >
-      {/* Section Header */}
       <div className="text-center mb-24 mt-24">
         <h1 className="text-4xl font-bold mb-24">Awards</h1>
       </div>
 
-      {/* Alternating Layout */}
       <div className="space-y-28">
         {awards.map((award, index) => {
           const isEven = index % 2 === 0;
+          const isFeatured = award.featured;
+
           return (
             <motion.div
               key={award.id}
-              className={`flex flex-col md:flex-row ${
+              className={`relative flex flex-col md:flex-row ${
                 isEven ? "" : "md:flex-row-reverse"
-              } items-center gap-18 md:gap-12`}
+              } items-center gap-18 md:gap-12 transition-transform ${
+                isFeatured ? "scale-[1.02]" : ""
+              }`}
               variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
               custom={index}
             >
+              {/* Featured Badge */}
+              {isFeatured && (
+                <div className="absolute top-[-12px] left-0 bg-yellow-400 text-white text-xs px-3 py-1 rounded-full shadow-md uppercase tracking-wide font-semibold z-10">
+                  Featured
+                </div>
+              )}
+
               {/* Image */}
               <div className="w-full md:w-1/2">
                 <img
