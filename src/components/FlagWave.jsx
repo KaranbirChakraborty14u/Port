@@ -1,26 +1,35 @@
+import React from "react";
+
 const FlagWave = () => {
   return (
     <div className="relative w-full overflow-hidden">
       <svg
         viewBox="0 0 1440 150"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-[100px] animate-wave"
+        className="w-full h-[120px] animate-flagWave"
         preserveAspectRatio="none"
       >
+        {/* Saffron */}
         <path
-          d="M0 60 C 180 120, 360 0, 540 60 C 720 120, 900 0, 1080 60 C 1260 120, 1440 0, 1440 0 L 1440 150 L 0 150 Z"
-          fill="#FF9933" // Saffron
+          d="M0,60 C360,0 1080,120 1440,60 L1440,150 L0,150 Z"
+          fill="#FF9933"
         />
+        {/* White */}
         <path
-          d="M0 90 C 180 150, 360 30, 540 90 C 720 150, 900 30, 1080 90 C 1260 150, 1440 30, 1440 30 L 1440 150 L 0 150 Z"
+          d="M0,90 C360,30 1080,150 1440,90 L1440,150 L0,150 Z"
           fill="white"
         />
+        {/* Green */}
         <path
-          d="M0 120 C 180 180, 360 60, 540 120 C 720 180, 900 60, 1080 120 C 1260 180, 1440 60, 1440 60 L 1440 150 L 0 150 Z"
-          fill="#138808" // Green
+          d="M0,120 C360,60 1080,180 1440,120 L1440,150 L0,150 Z"
+          fill="#138808"
         />
       </svg>
+
+      {/* Optional Ashoka Chakra center (subtle) */}
+      {/* <div className="absolute top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="w-6 h-6 rounded-full border-2 border-blue-600"></div>
+      </div> */}
     </div>
   );
 };

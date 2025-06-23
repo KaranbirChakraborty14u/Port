@@ -1,7 +1,8 @@
-import profilePic from "./Sunita.png";
+import profilePic from "./Sunita1.jpg";
 import { HERO_CONTENT } from "../../constants";
 import FlagWave from "./FlagWave";
 import { motion } from "framer-motion";
+import flag2 from "./flag2.png";
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -29,8 +30,7 @@ const childVariants = {
 const Hero = () => {
   return (
     <>
-<div className="font-outfit flex flex-col lg:flex-row-reverse items-center justify-between pt-16 px-4 lg:px-12 pb-4 lg:mb-36 -mt-20 md:mt-0">
-
+      <div className="font-outfit flex flex-col lg:flex-row-reverse items-center justify-between pt-16 px-4 lg:px-12 pb-4 lg:mb-36 -mt-20 md:mt-0">
         {/* Right: Profile Image */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
@@ -92,6 +92,15 @@ const Hero = () => {
 
       {/* Optional Flag Animation */}
       {/* <FlagWave /> */}
+
+      {/* Bottom Flag Image */}
+      {/* <div className="w-full mt-8">
+        <img
+          src={flag2}
+          alt="National Flag"
+         className="w-full h-32 object-cover"
+        />
+      </div> */}
     </>
   );
 };
