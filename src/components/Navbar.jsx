@@ -39,9 +39,9 @@ const Navbar = () => {
   return (
     <nav className="font-outfit sticky top-0 z-50 px-4 md:px-8 py-4 transition-all duration-300">
       <div className="flex items-center justify-between">
-        {/* <Link to="/" aria-label="Home">
+        <Link to="/" aria-label="Home">
           <img src={logo} width={50} height={33} alt="Logo" className="mr-2" />
-        </Link> */}
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-10 text-lg font-medium text-gray-800 items-center ml-10">
