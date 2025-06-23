@@ -4,36 +4,30 @@ import { motion } from "framer-motion";
 const awards = [
   {
     id: 1,
-    title: "Surjya Kalanka",
-    description: "A collection of three Assamese novels.",
-    img: "https://images.unsplash.com/photo-1544717305-2782549b5136",
+    title: "Parivartan Award by Amway",
+    description:
+      "Received for significant contributions towards the development of women in society.",
+    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c", // Replace with actual award images if available
   },
   {
     id: 2,
-    title: "Hajik Longhadu",
+    title: "Eastern Women Association Award",
     description:
-      "A novel based on the Hmar-Dimasa ethnic clash in Dima Hasao (2003–04), drawn from personal experiences and interviews.",
+      "Honored as the best NGO by the Eastern Women Association for impactful social work.",
     img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
   },
   {
     id: 3,
-    title: "Moi Cottonian Asilu",
+    title: "Chandraprabha Saikiani Award (2024)",
     description:
-      "A semi-autobiographical novel about the author’s days in Cotton College during the Assam Agitation (1979–81).",
+      "Awarded by the Government of Assam on Bishnu Rabha Diwas, 2024, for outstanding social work for women and children.",
     img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
   },
   {
     id: 4,
-    title: "Agnisnata Sita",
+    title: "Global Congress Invitee",
     description:
-      "Based on true stories of women who were victims of trafficking, gang rape, and gender-based violence.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
-  },
-  {
-    id: 5,
-    title: "Angha",
-    description:
-      "Set in Varanasi, the story explores cultural dissonance and inner conflict faced by a US-based Assamese woman seeking peace.",
+      "Invited participant at the World Congress Against the Sexual Exploitation of Women & Girls.",
     img: "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
   },
 ];
@@ -54,7 +48,7 @@ const fadeInUp = {
 const Awards = () => {
   return (
     <section
-      id="awards" // 👈 This is the key update!
+      id="awards"
       className="px-6 pb-20 max-w-7xl mx-auto text-gray-800 font-[Outfit,sans-serif]"
     >
       {/* Section Header */}
@@ -62,13 +56,13 @@ const Awards = () => {
         <h1 className="text-4xl font-bold mb-24">Awards</h1>
       </div>
 
-      {/* Alternating Book Layout */}
+      {/* Alternating Layout */}
       <div className="space-y-28">
-        {awards.map((book, index) => {
+        {awards.map((award, index) => {
           const isEven = index % 2 === 0;
           return (
             <motion.div
-              key={book.id}
+              key={award.id}
               className={`flex flex-col md:flex-row ${
                 isEven ? "" : "md:flex-row-reverse"
               } items-center gap-18 md:gap-12`}
@@ -81,20 +75,18 @@ const Awards = () => {
               {/* Image */}
               <div className="w-full md:w-1/2">
                 <img
-                  src={book.img}
-                  alt={book.title}
+                  src={award.img}
+                  alt={award.title}
                   className="w-full h-72 object-cover rounded-xl shadow-md"
                 />
               </div>
 
               {/* Text */}
               <div className="w-full md:w-1/2">
-                <p className="text-sm text-gray-500 mb-2">
-                  Literature · Book Release
-                </p>
-                <h2 className="text-2xl font-semibold mb-3">{book.title}</h2>
+                <p className="text-sm text-gray-500 mb-2">Recognition · Award</p>
+                <h2 className="text-2xl font-semibold mb-3">{award.title}</h2>
                 <p className="text-gray-700 text-justify leading-relaxed">
-                  {book.description}
+                  {award.description}
                 </p>
               </div>
             </motion.div>
