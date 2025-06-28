@@ -1,41 +1,46 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Contact from "../components/Contact"
+import surjyaKalankaImg from "../components/Books/Suryakanlkar.jpg";
+import angha from "../components/Books/Angha.jpg";
+import hajika from "../components/Books/Hajik.jpg";
+import cotton from "../components/Books/Cotton.jpg";
+import sita from "../components/Books/Sita.jpg"
 
 const books = [
   {
     id: 1,
     title: "Surjya Kalanka",
     description: "A collection of three Assamese novels.",
-    img: "https://images.unsplash.com/photo-1544717305-2782549b5136",
+    img: surjyaKalankaImg,
   },
   {
     id: 2,
     title: "Hajik Longhadu",
     description:
       "A novel based on the Hmar-Dimasa ethnic clash in Dima Hasao (2003–04), drawn from personal experiences and interviews.",
-    img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+    img: hajika,
   },
   {
     id: 3,
     title: "Moi Cottonian Asilu",
     description:
       "A semi-autobiographical novel about the author’s days in Cotton College during the Assam Agitation (1979–81).",
-    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+    img: cotton,
   },
   {
     id: 4,
     title: "Agnisnata Sita",
     description:
       "Based on true stories of women who were victims of trafficking, gang rape, and gender-based violence.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+    img: sita,
   },
   {
     id: 5,
     title: "Angha",
     description:
       "Set in Varanasi, the story explores cultural dissonance and inner conflict faced by a US-based Assamese woman seeking peace.",
-    img: "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
+    img: angha,
   },
 ];
 
@@ -86,13 +91,14 @@ const LiteratureCareer = () => {
               viewport={{ once: true }}
             >
               {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={book.img}
-                  alt={book.title}
-                  className="w-full h-72 object-cover rounded-xl shadow-md"
-                />
-              </div>
+             <div className="w-full md:w-1/2">
+  <img
+    src={book.img}
+    alt={book.title}
+    className="w-full h-72 object-contain rounded-xl"
+  />
+</div>
+
 
               {/* Text */}
               <div className="w-full md:w-1/2">

@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import eastern from "../components/Award/Eastern.jpeg";
+import chandra from "../components/Award/Chandra.jpeg"
 
 const awards = [
   {
@@ -7,7 +9,7 @@ const awards = [
     title: "Chandraprabha Saikiani Award (2024)",
     description:
       "Awarded by the Government of Assam on Bishnu Rabha Diwas, 2024, for outstanding social work for women and children.",
-    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+    img: chandra,
     featured: true,
   },
   {
@@ -15,15 +17,15 @@ const awards = [
     title: "Eastern Women Association Award",
     description:
       "Honored as the best NGO by the Eastern Women Association for impactful social work.",
-    img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+    img: eastern,
   },
-  {
-    id: 3,
-    title: "Parivartan Award by Amway",
-    description:
-      "Received for significant contributions towards the development of women in society.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
-  },
+  // {
+  //   id: 3,
+  //   title: "Parivartan Award by Amway",
+  //   description:
+  //     "Received for significant contributions towards the development of women in society.",
+  //   img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+  // },
   {
     id: 4,
     title: "Global Congress Invitee",
