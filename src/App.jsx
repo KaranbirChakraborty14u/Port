@@ -12,6 +12,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Awards from "./components/Awards";
+import Journey from "./components/Journey";
 
 const App = () => {
   return (
@@ -32,7 +33,7 @@ const App = () => {
           <Route path="/" element={
             <>
               <Hero />
-              <About />
+              <Journey />
               <Projects />
               <Experience />
               <Awards />
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/AcademicCareer" element={<AcademicCareer />} />
           <Route path="/SocialWork" element={<SocialWork />} /> 
           <Route path="/LiteratureCareer" element={<LiteratureCareer />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </div>
     </div>

@@ -8,7 +8,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.6 }}
-        className="mb-24 text-center text-4xl mt-12 font-bold text-gray-900"
+        className="mb-24 text-center text-4xl mt-12 md:mt-24 font-bold text-gray-900"
       >
         Social Works
       </motion.h2>
