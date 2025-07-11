@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import img1 from "../Photos/Produced a film on Human trafficking in Assam/Movie.jpeg";
+import img1 from "../Photos/human_trafficking_assam/Movie.jpeg";
+
 
 const Movie = () => {
   const [emblaMainRef, emblaMain] = useEmblaCarousel({ loop: true });
