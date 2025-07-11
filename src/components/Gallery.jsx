@@ -74,12 +74,12 @@ const galleryItems = [
     isVideo: false,
     link: "/environment",
   },
-  {
-    title: "Produced a film on Human trafficking in Assam",
-    image: img18,
-    isVideo: false,
-    link: "/movie",
-  },
+  // {
+  //   title: "Produced a film on Human trafficking in Assam",
+  //   image: img18,
+  //   isVideo: false,
+  //   link: "/movie",
+  // },
   {
     title: "Teenage Photo",
     image: img14,
