@@ -3,16 +3,12 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section
-  id="experience"
-  className="px-4 py-24 text-gray-800 font-outfit"
->
-
+    <section className="px-4 mb-16 -mt-12 md:mt-8 md:mb-20 text-gray-800 font-outfit">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -80 }}
         transition={{ duration: 0.6 }}
-        className="mb-24 text-center text-4xl font-bold text-gray-900"
+        className="mb-24 text-center text-4xl font-bold text-gray-800"
       >
         Experience
       </motion.h2>

@@ -19,13 +19,6 @@ const awards = [
       "Honored as the best NGO by the Eastern Women Association for impactful social work.",
     img: eastern,
   },
-  // {
-  //   id: 3,
-  //   title: "Parivartan Award by Amway",
-  //   description:
-  //     "Received for significant contributions towards the development of women in society.",
-  //   img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
-  // },
   {
     id: 4,
     title: "Global Congress Invitee",
@@ -51,11 +44,10 @@ const fadeInUp = {
 const Awards = () => {
   return (
     <section
-      id="awards"
       className="px-6 pb-20 max-w-7xl mx-auto text-gray-800 font-[Outfit,sans-serif]"
     >
-      <div className="text-center mb-24 mt-24">
-        <h1 className="text-4xl font-bold mb-24">Awards</h1>
+      <div className="text-center mb-24 mt-24 md:mt-16">
+        <h1 className="text-3xl md:text-4xl font-bold mb-24">Awards</h1>
       </div>
 
       <div className="space-y-28">
@@ -105,7 +97,9 @@ const Awards = () => {
           );
         })}
       </div>
+     
     </section>
+    
   );
 };
 

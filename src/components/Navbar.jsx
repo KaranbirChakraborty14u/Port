@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import {
   MdEmail,
@@ -59,8 +58,8 @@ const Navbar = () => {
           >
             About
           </Link>
-          
-           {/* Desktop Dropdown */}
+
+          {/* Desktop Dropdown */}
           <div
             className="relative"
             ref={dropdownRef}
@@ -91,25 +90,28 @@ const Navbar = () => {
             )}
           </div>
 
-          <ScrollLink
-            to="experience"
-            smooth
-            duration={500}
-            offset={-100}
-            className="cursor-pointer hover:text-blue-600 hover:scale-105 transition-all duration-300 ease-in-out"
+          <Link
+            to="/Experience"
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => setIsOpen(false)}
           >
             Experience
-          </ScrollLink>
+          </Link>
 
-          <ScrollLink
-            to="awards"
-            smooth
-            duration={500}
-            offset={-100}
-            className="cursor-pointer hover:text-blue-600 hover:scale-105 transition-all duration-300 ease-in-out"
+          <Link
+            to="/Awards"
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => setIsOpen(false)}
           >
             Awards
-          </ScrollLink>
+          </Link>
+          <Link
+            to="/Gallery"
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => setIsOpen(false)}
+          >
+            Gallery
+          </Link>
         </div>
 
         {/* Desktop Icons */}
@@ -190,6 +192,7 @@ const Navbar = () => {
           >
             About
           </Link>
+         
 
           {/* Mobile Dropdown */}
           <div>
@@ -223,26 +226,29 @@ const Navbar = () => {
             )}
           </div>
 
-          <ScrollLink
-            to="experience"
-            smooth
-            duration={500}
-            offset={-100}
+          <Link
+            to="/Experience"
             className="cursor-pointer hover:text-blue-600"
             onClick={() => setIsOpen(false)}
           >
             Experience
-          </ScrollLink>
-          <ScrollLink
-            to="awards"
-            smooth
-            duration={500}
-            offset={-100}
+          </Link>
+
+          <Link
+            to="/Awards"
             className="cursor-pointer hover:text-blue-600"
             onClick={() => setIsOpen(false)}
           >
             Awards
-          </ScrollLink>
+          </Link>
+           <Link
+            to="/Gallery"
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => setIsOpen(false)}
+          >
+            Gallery
+          </Link>
+        
 
           {/* Mobile Icons */}
           <div className="flex gap-4 text-xl mt-3 text-gray-600">
