@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import Contact from "../Contact";
 
 import img1 from "../Photos/Child work/Childwork1.jpeg";
 import img2 from "../Photos/Child work/Childwork2.jpeg";
@@ -8,7 +10,10 @@ import img3 from "../Photos/Child work/Childwork3.jpeg";
 
 const ChildWork = () => {
   const [emblaMainRef, emblaMain] = useEmblaCarousel({ loop: true });
-  const [emblaThumbsRef, emblaThumbs] = useEmblaCarousel({ containScroll: "keepSnaps", dragFree: true });
+  const [emblaThumbsRef, emblaThumbs] = useEmblaCarousel({
+    containScroll: "keepSnaps",
+    dragFree: true,
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const images = [img1, img2, img3];
 
@@ -29,46 +34,77 @@ const ChildWork = () => {
   const onThumbClick = (index) => emblaMain && emblaMain.scrollTo(index);
 
   return (
-    <div className="p-4 max-w-4xl mx-auto relative">
-      <h1 className="text-2xl font-bold mb-2">Child Work</h1>
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="md:mb-12 mb-12 p-4 max-w-6xl mx-auto relative font-[Outfit,sans-serif]"
+      >
+        <h1 className="text-center text-3xl sm:text-4xl font-bold text-black -mt-20 mb-16 md:-mt-8 md:mb-16">
+          Child Work
+          <span className="block w-20 h-1 bg-gray-700 mx-auto mt-3 rounded-full"></span>
+        </h1>
 
-      {/* Main Carousel */}
-      <div className="overflow-hidden rounded-xl shadow-xl mb-4 relative bg-black" ref={emblaMainRef}>
-        <div className="flex">
-          {images.map((src, index) => (
-            <div key={index} className="flex-[0_0_100%] aspect-[16/9] flex items-center justify-center">
-              <img
-                src={src}
-                alt={`slide-${index}`}
-                className="max-w-full max-h-full object-contain rounded-xl"
-              />
-            </div>
-          ))}
+        {/* Main Carousel */}
+        <div
+          className="overflow-hidden rounded-xl shadow-xl mb-10 relative"
+          ref={emblaMainRef}
+        >
+          <div className="flex">
+            {images.map((src, index) => (
+              <div
+                key={index}
+                className="flex-[0_0_100%] group transition-transform duration-300 ease-in-out"
+              >
+                <img
+                  src={src}
+                  alt={`slide-${index}`}
+                  className="w-full h-[360px] md:h-[630px] sm:h-[400px] object-cover md:object-contain rounded-xl transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={scrollPrev}
+            className="absolute top-1/2 left-1 md:left-3 transform -translate-y-1/2 bg-white hover:bg-gray-200 rounded-full transition p-2 shadow-lg z-10"
+          >
+            <ChevronLeft className="md:w-5 md:h-5 w-3 h-3 text-gray-700" />
+          </button>
+          <button
+            onClick={scrollNext}
+            className="absolute top-1/2 right-1 md:right-3 transform -translate-y-1/2 bg-white hover:bg-gray-200 transition p-2 rounded-full shadow-lg z-10"
+          >
+            <ChevronRight className="md:w-5 md:h-5 w-3 h-3 text-gray-700" />
+          </button>
         </div>
 
-        <button onClick={scrollPrev} className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white rounded-full shadow p-1">
-          <ChevronLeft className="w-5 h-5 text-gray-700" />
-        </button>
-        <button onClick={scrollNext} className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full shadow p-1">
-          <ChevronRight className="w-5 h-5 text-gray-700" />
-        </button>
-      </div>
-
-      {/* Thumbnails */}
-      <div className="overflow-hidden" ref={emblaThumbsRef}>
-        <div className="flex gap-2">
-          {images.map((src, index) => (
-            <div
-              key={index}
-              onClick={() => onThumbClick(index)}
-              className={`flex-[0_0_20%] cursor-pointer border-2 ${selectedIndex === index ? "border-blue-600" : "border-transparent"} rounded-md overflow-hidden`}
-            >
-              <img src={src} alt={`thumb-${index}`} className="w-full h-16 object-cover" />
-            </div>
-          ))}
+        {/* Thumbnails */}
+        <div className="overflow-hidden" ref={emblaThumbsRef}>
+          <div className="flex gap-3">
+            {images.map((src, index) => (
+              <div
+                key={index}
+                onClick={() => onThumbClick(index)}
+                className={`flex-[0_0_25%] sm:flex-[0_0_15%] cursor-pointer border-2 transition-all duration-200 ${
+                  selectedIndex === index
+                    ? "border-blue-600"
+                    : "border-transparent"
+                } rounded-md overflow-hidden hover:opacity-80`}
+              >
+                <img
+                  src={src}
+                  alt={`thumb-${index}`}
+                  className="w-full h-16 sm:h-20 object-cover rounded"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+      <Contact />
+    </>
   );
 };
 

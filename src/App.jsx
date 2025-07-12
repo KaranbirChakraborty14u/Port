@@ -32,7 +32,7 @@ import TeenagePhoto from "./components/Galleries/TeenagePhoto.jsx";
 import CottonCollege from "./components/Galleries/CottonCollege.jsx";
 import Political from "./components/Galleries/Political.jsx";
 import Environment from "./components/Galleries/Environment.jsx";
-// import Movie from "./components/Galleries/Movie.jsx" ;
+import Movie from "./components/Galleries/Movie.jsx" ;
 
 const App = () => {
   return (
@@ -88,7 +88,7 @@ const App = () => {
           <Route path="/teenage-photo" element={<TeenagePhoto />} />
           <Route path="/cotton-college" element={<CottonCollege />} />
           <Route path="/environment" element={<Environment />} />
-          {/* <Route path="/movie" element={<Movie />} /> */}
+          <Route path="/movie" element={<Movie />} />
         </Routes>
       </div>
     </div>

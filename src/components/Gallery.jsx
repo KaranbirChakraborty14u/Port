@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Contact from "../components/Contact";
 
 import img1 from "./Photos/Podcast/Podcast1.jpeg";
 import img2 from "./Photos/Religious/Religious8.jpeg";
@@ -20,8 +21,7 @@ import img14 from "./Photos/Teenage photo/Teenage photo.jpeg";
 import img15 from "./Photos/Cotton College/Cotton College.jpeg";
 import img16 from "./Photos/Political/Political10.jpeg";
 import img17 from "./Photos/Observation of World Environment day/Environment.jpeg";
-// import img18 from "./Photos/human_trafficking_assam/movie.jpeg";
-
+import img18 from "./Photos/human_trafficking_assam/movie.jpeg";
 
 const galleryItems = [
   { title: "Podcast", image: img1, isVideo: false, link: "/podcast" },
@@ -74,12 +74,12 @@ const galleryItems = [
     isVideo: false,
     link: "/environment",
   },
-  // {
-  //   title: "Produced a film on Human trafficking in Assam",
-  //   image: img18,
-  //   isVideo: false,
-  //   link: "/movie",
-  // },
+  {
+    title: "Produced a film on Human trafficking in Assam",
+    image: img18,
+    isVideo: false,
+    link: "/movie",
+  },
   {
     title: "Teenage Photo",
     image: img14,
@@ -96,7 +96,10 @@ const galleryItems = [
 
 const Gallery = () => {
   return (
+    <>
     <section className="max-w-7xl mx-auto -mt-16 mb-12 md:-mt-4 md:mb-12 px-4 md:px-8">
+
+      {/* Title */}
       <motion.h2
         className="text-4xl font-semibold text-center text-black font-[Outfit] mb-16 md:mb-20 relative"
         initial={{ opacity: 0, y: -20 }}
@@ -135,6 +138,8 @@ const Gallery = () => {
         ))}
       </div>
     </section>
+    <Contact />
+    </>
   );
 };
 

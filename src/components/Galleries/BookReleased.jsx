@@ -1,18 +1,38 @@
 import React from 'react';
 import img1 from "../Photos/Book released/book.jpeg";
+import { motion } from "framer-motion";
+import Contact from "../Contact";
 
 const BookReleased = () => {
   return (
-    <div className="p-4 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Book Released</h1>
-      <div className="w-full aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-md flex items-center justify-center">
-        <img
-          src={img1}
-          alt="Book Released"
-          className="max-h-full max-w-full object-contain"
-        />
-      </div>
-    </div>
+     <>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="md:mb-12 mb-12 p-4 max-w-6xl mx-auto relative font-[Outfit,sans-serif]"
+      >
+        <h1 className="text-center text-2xl md:text-3xl sm:text-4xl font-bold text-black -mt-20 mb-16 md:-mt-6 md:mb-20">
+          Book Released
+          <span className="block w-20 h-1 bg-gray-700 mx-auto mt-3 rounded-full"></span>
+        </h1>
+
+        {/* Main Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="overflow-hidden rounded-xl shadow-2xl mb-10 relative"
+        >
+          <img
+            src={img1}
+            alt="Awareness Meeting"
+            className="w-full h-[420px] md:h-[760px] sm:h-[400px] object-cover rounded-xl transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </motion.div>
+      </motion.div>
+      <Contact />
+    </>
   );
 };
 

@@ -1,98 +1,38 @@
-// import React, { useState, useEffect, useCallback } from "react";
-// import useEmblaCarousel from "embla-carousel-react";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
+import React from "react";
+import img1 from "../Photos/human_trafficking_assam/Movie.jpeg";
+import { motion } from "framer-motion";
+import Contact from "../Contact";
 
-// import img1 from "../Photos/human_trafficking_assam/Movie.jpeg";
+const Movie = () => {
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="md:mb-12 mb-12 p-4 max-w-5xl mx-auto relative font-[Outfit,sans-serif]"
+      >
+        <h1 className="text-center text-2xl md:text-3xl sm:text-4xl font-bold text-black -mt-20 mb-16 md:-mt-6 md:mb-20">
+          Movie on Human Trafficking
+          <span className="block w-20 h-1 bg-gray-700 mx-auto mt-3 rounded-full"></span>
+        </h1>
+        {/* Main Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="overflow-hidden rounded-xl shadow-2xl mb-10 relative"
+        >
+          <img
+            src={img1}
+            alt="Naba Jeevan Children"
+            className="w-full h-[460px] md:h-[820px] sm:h-[400px] object-cover rounded-xl transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </motion.div>
+      </motion.div>
+      <Contact />
+    </>
+  );
+};
 
-
-// const Movie = () => {
-//   const [emblaMainRef, emblaMain] = useEmblaCarousel({ loop: true });
-//   const [emblaThumbsRef, emblaThumbs] = useEmblaCarousel({
-//     containScroll: "trimSnaps",
-//     dragFree: true,
-//   });
-//   const [selectedIndex, setSelectedIndex] = useState(0);
-
-//   const images = [img1]; // You can add more images here later
-
-//   const onSelect = useCallback(() => {
-//     if (!emblaMain || !emblaThumbs) return;
-//     setSelectedIndex(emblaMain.selectedScrollSnap());
-//     emblaThumbs.scrollTo(emblaMain.selectedScrollSnap());
-//   }, [emblaMain, emblaThumbs]);
-
-//   useEffect(() => {
-//     if (!emblaMain) return;
-//     emblaMain.on("select", onSelect);
-//     onSelect();
-//   }, [emblaMain, onSelect]);
-
-//   const scrollPrev = () => emblaMain && emblaMain.scrollPrev();
-//   const scrollNext = () => emblaMain && emblaMain.scrollNext();
-//   const onThumbClick = (index) => emblaMain && emblaMain.scrollTo(index);
-
-//   return (
-//     <div className="p-4 max-w-4xl mx-auto relative">
-//       <h1 className="text-2xl font-bold mb-2">Movie on Human Trafficking</h1>
-
-//       {/* Main Carousel */}
-//       <div
-//         className="overflow-hidden rounded-xl shadow-xl mb-4 relative"
-//         ref={emblaMainRef}
-//       >
-//         <div className="flex">
-//           {images.map((src, index) => (
-//          <div className="flex-[0_0_100%] h-[60vh] sm:h-[500px]" key={index}>
-//   <img
-//     src={src}
-//     alt={`Political image ${index + 1}`}
-//     className="w-full h-full object-contain bg-black rounded-xl"
-//   />
-// </div>
-
-//           ))}
-//         </div>
-
-//         <button
-//           onClick={scrollPrev}
-//           className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white rounded-full shadow p-1 focus:outline focus:outline-2 focus:outline-blue-600"
-//           aria-label="Previous slide"
-//         >
-//           <ChevronLeft className="w-5 h-5 text-gray-700" />
-//         </button>
-//         <button
-//           onClick={scrollNext}
-//           className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full shadow p-1 focus:outline focus:outline-2 focus:outline-blue-600"
-//           aria-label="Next slide"
-//         >
-//           <ChevronRight className="w-5 h-5 text-gray-700" />
-//         </button>
-//       </div>
-
-//       {/* Thumbnails */}
-//       <div className="overflow-hidden" ref={emblaThumbsRef}>
-//         <div className="flex gap-2">
-//           {images.map((src, index) => (
-//             <div
-//               key={index}
-//               onClick={() => onThumbClick(index)}
-//               className={`flex-[0_0_20%] sm:flex-[0_0_15%] cursor-pointer border-2 ${
-//                 selectedIndex === index
-//                   ? "border-blue-600"
-//                   : "border-transparent"
-//               } rounded-md overflow-hidden`}
-//             >
-//               <img
-//                 src={src}
-//                 alt={`Thumbnail for movie scene ${index + 1}`}
-//                 className="w-full h-16 object-cover"
-//               />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Movie;
+export default Movie;
