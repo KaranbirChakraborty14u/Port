@@ -21,7 +21,7 @@ import img14 from "./Photos/Teenage photo/Teenage photo.jpeg";
 import img15 from "./Photos/Cotton College/Cotton College.jpeg";
 import img16 from "./Photos/Political/Political10.jpeg";
 import img17 from "./Photos/Observation of World Environment day/Environment.jpeg";
-import img18 from "./Photos/human_trafficking_assam/movie.jpeg";
+import img18 from "./Photos/human_trafficking_assam/Movie.jpeg";
 
 const galleryItems = [
   { title: "Podcast", image: img1, isVideo: false, link: "/podcast" },
