@@ -21,18 +21,7 @@ export const EXPERIENCES = [
     company: "Assam Centre for Rural Development",
     description: "Directed programs on women empowerment, anti-trafficking, disability rights, child labour, and child welfare. Worked closely with government bodies and international organizations on project execution and monitoring."
   },
-  {
-    year: "1999",
-    role: "Assistant Project Coordinator",
-    company: "Tezpur District Mahila Samiti (Oxfam & Royal Netherlands Embassy)",
-    description: "Coordinated rural development and gender equity projects in collaboration with international partners."
-  },
-  {
-    year: "Late 1990",
-    role: "Project Coordinator",
-    company: "Women in Agriculture",
-    description: "Managed gender-sensitive agricultural initiatives focused on empowering rural women farmers."
-  },
+  
   {
     year: "1998–Present",
     role: "Trainer / Facilitator",
@@ -40,17 +29,18 @@ export const EXPERIENCES = [
     description: "Provided gender and empowerment training to grassroots-level women; helped form self-help groups (SHGs) across rural Assam."
   },
   {
+    year: "1992",
+    role: "Assistant Project Coordinator",
+    company: "Tezpur District Mahila Samiti (Oxfam & Royal Netherlands Embassy)",
+    description: "Coordinated rural development and gender equity projects in collaboration with international partners."
+  },
+  {
     year: "1985",
     role: "Lecturer in Political Science",
     company: "Dimoria College, Khetri, Assam",
     description: "Taught political science to undergraduate students and contributed to academic growth at the institution."
   },
-  {
-    year: "2000",
-    role: "Organizer",
-    company: "CAPART (Ministry of Rural Development)",
-    description: "Organised two Gram Shree Melas to promote rural artisans from across India with government support."
-  }
+  
 ];
 
 
@@ -62,7 +52,7 @@ export const PROJECTS = [
       "Founded an NGO focused on rural upliftment, empowerment, and sustainable development in Assam’s underserved communities.",
   },
   {
-    title: "Social Activism in Conflict & Flood Zones (since 1991)",
+    title: "Social Activism in Conflict & Flood Zones",
     image: project4,
     description:
       "Worked extensively in militancy-affected and flood-prone areas of Assam to support victims and rebuild communities.",
@@ -78,24 +68,6 @@ export const PROJECTS = [
     image: project3,
     description:
       "Set up a training center to revive and promote traditional silk weaving among tribal women for economic sustainability.",
-  },
-  {
-    title: "100 Self Help Groups Formed (1999–2004)",
-    image: project1,
-    description:
-      "Facilitated 100 SHGs in tribal villages and enabled them to access loans from NABARD, NEDFi, and others.",
-  },
-  {
-    title: "SHGs Promoting Bamboo & Cash Crops",
-    image: project2,
-    description:
-      "Encouraged sustainable cash crop and bamboo farming through SHGs with financial and technical support.",
-  },
-  {
-    title: "Supporting Women in Jhoom Cultivation",
-    image: project4,
-    description:
-      "Worked with women practicing Jhoom cultivation to introduce sustainable methods and increase crop resilience.",
   },
   {
     title: "5000 Zero-Balance Bank Accounts (2015)",
