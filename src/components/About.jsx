@@ -4,14 +4,21 @@ import profilePicss from "./Sunita1.jpg";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import Contact from "../components/Contact";
-import Journey from "./Journey";
+
+const childVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const About = () => {
-
   return (
     <>
       {/* Top Section */}
-      <div className="w-full px-4 md:px-16 py-8 flex flex-col md:flex-row items-center gap-32 font-outfit">
+      <div className="w-full px-4 md:px-16 mb-12 py-8 md:mb-12 flex flex-col md:flex-row items-center gap-32 font-outfit">
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -52,6 +59,16 @@ const About = () => {
             passion for the motherland. He has been greatly influenced by the
             writings of K.M. Munshi.
           </p>
+          <motion.a
+            variants={childVariants}
+            href="/Sunita_Changkakati.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="inline-block mt-8 md:mt-8 px-6 py-4 text-sm sm:text-base rounded-full bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium shadow-lg hover:from-blue-700 hover:to-indigo-800 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out transform"
+          >
+            Download CV
+          </motion.a>
         </motion.div>
 
         {/* Image Section */}
@@ -117,8 +134,6 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-
-      <Journey />
       <Contact />
     </>
   );

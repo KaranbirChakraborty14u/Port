@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import eastern from "../components/Award/Eastern.jpeg";
-import chandra from "../components/Award/Chandra.jpeg"
+import chandra from "../components/Award/Chandra.jpeg";
 
 const awards = [
   {

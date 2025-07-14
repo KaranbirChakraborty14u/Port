@@ -1,8 +1,6 @@
 import profilePic from "./Sunita1.jpg";
 import { HERO_CONTENT } from "../../constants";
-import FlagWave from "./FlagWave";
 import { motion } from "framer-motion";
-import flag2 from "./flag2.png";
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -75,32 +73,9 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-
-            <motion.a
-              variants={childVariants}
-              href="/Sunita_Changkakati"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="inline-block mt-4 px-6 py-4 text-sm sm:text-base rounded-full bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium shadow-lg hover:from-blue-700 hover:to-indigo-800 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out transform"
-            >
-              Download CV
-            </motion.a>
           </motion.div>
         </div>
       </div>
-
-      {/* Optional Flag Animation */}
-      {/* <FlagWave /> */}
-
-      {/* Bottom Flag Image */}
-      {/* <div className="w-full mt-8">
-        <img
-          src={flag2}
-          alt="National Flag"
-         className="w-full h-32 object-cover"
-        />
-      </div> */}
     </>
   );
 };
