@@ -30,34 +30,23 @@ const About = () => {
             Dr. Sunita Changkakati : An Introduction
           </h2>
           <p className="text-base md:text-lg text-gray-800 text-justify mb-6 leading-7 font-outfit">
-            Amitbhai Anilchandra Shah, the former President of the Bharatiya
-            Janata Party and India’s Home Minister, was born on 22 October 1964
-            to a Gujarati couple Mrs. Kusum Ben and Mr. Anilchandra Shah living
-            in Mumbai. Amitbhai Anilchandra Shah’s grandfather was a wealthy
-            merchant (Nagar Seth) in Mansa, a small princely state of Baroda
-            State of Gaikwad. Till the age of 16, Amitbhai Anilchandra Shah
-            lived in his native village Mansa in Gujarat. It is there where he
-            received his primary education. The young Shah’s early education
-            took place according to the 'Indian Value Tradition' under the
-            supervision of prominent scholars of the Gaikwad State. He was
-            taught Indian scriptures, historical texts, grammar and epics in his
-            childhood. He continued to study Indian philosophy and texts even in
-            the later years.
-          </p>
-          <p className="text-base md:text-lg text-gray-800 text-justify leading-7">
-            Amitbhai Anilchandra Shah’s family moved to Ahmedabad after the
-            completion of his primary education. His mother had a deep influence
-            in his life. She was an avid Gandhian and she inspired him to wear
-            Khadi. In his youth, while during education, he read biographies of
-            many patriots and was deeply influenced by their passion for the
-            motherland. He has been greatly influenced by the writings of K.M.
-            Munshi. Amitbhai Anilchandra Shah’s family moved to Ahmedabad after
-            the completion of his primary education. His mother had a deep
-            influence in his life. She was an avid Gandhian and she inspired him
-            to wear Khadi. In his youth, while during education, he read
-            biographies of many patriots and was deeply influenced by their
-            passion for the motherland. He has been greatly influenced by the
-            writings of K.M. Munshi.
+          
+Dr. Sunita Changkakati is a prominent social worker and human rights advocate from Assam, India, whose pioneering efforts over the past three decades have significantly impacted the fields of child protection and women’s empowerment. Born on March 31, 1961, and holding a Ph.D. in Political Science from Gauhati University, Dr. Changkakati has devoted her life to the upliftment of marginalized communities, especially women and children in conflict-prone and underserved regions of Assam.
+
+A grassroots changemaker, she co-founded the Assam Centre for Rural Development (ACRD) in 1995. This Guwahati-based NGO has been a driving force in promoting self-help groups (SHGs), vocational training, and livelihood opportunities for rural women in districts like Baksa, Kamrup, and Udalguri. Her initiatives have empowered hundreds of women through income-generating activities such as handloom weaving, Eri silk production, pig farming, and financial literacy, facilitating economic self-reliance and social dignity.
+
+Dr. Changkakati has also made profound contributions to child welfare. Under the National Child Labour Project, she established four non-formal education centres in remote areas to rehabilitate child labourers, many of whom have been successfully mainstreamed into formal education. She worked intensively to include children with disabilities into regular schools, advocating for accessible education and societal acceptance.
+
+One of her most transformative initiatives is *Navajeevan*, a rehabilitation home she established in 2009 for female survivors of human trafficking and abuse. The home provides shelter, education, counseling, and vocational training to help survivors rebuild their lives. It has since evolved into a registered Children’s Home under the Juvenile Justice Act, 2015, providing safe and nurturing spaces for over 100 children affected by child labour, marriage, and sexual abuse.
+
+In her tenure as Chairperson of the Assam State Commission for Protection of Child Rights (2017–2023), Dr. Changkakati directly intervened in over 500 child rights violation cases. She responded to emerging issues during the COVID-19 pandemic by launching mental health awareness programs for children and families. Her work has shaped policies and brought attention to previously neglected areas like child trafficking, gender-based violence, and inclusive education.
+
+Her advocacy extends beyond direct service. She is an accomplished author of six books and the producer of a documentary, *Slaughtered Dream* (2017), which highlights the plight of trafficking survivors. Her writings and media presence continue to influence public discourse and promote social justice.
+
+In recognition of her outstanding contributions, Dr. Changkakati received the Chandraprabha Saikiani Award from the Government of Assam in 2024. Despite facing financial constraints and operating in challenging, insurgency-affected regions, her unwavering commitment to human dignity has made her a beacon of hope.
+
+Today, Dr. Sunita Changkakati continues her mission through ACRD and *Navajeevan*, embodying resilience, compassion, and transformative leadership. Her legacy lies not only in the services she has provided but in the systemic changes she has inspired across Assam’s socio-political landscape.
+
           </p>
           <motion.a
             variants={childVariants}
