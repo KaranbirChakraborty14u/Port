@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       {/* Top Section */}
-      <div className="w-full px-4 md:px-16 mb-12 py-8 md:mb-12 flex flex-col md:flex-row items-center gap-32 font-outfit">
+      <div className="md:-mt-4 w-full px-4 md:px-16 mb-12 py-8 md:mb-12 flex flex-col md:flex-row items-center gap-32 font-outfit">
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -30,23 +30,57 @@ const About = () => {
             Dr. Sunita Changkakati : An Introduction
           </h2>
           <p className="text-base md:text-lg text-gray-800 text-justify mb-6 leading-7 font-outfit">
-          
-Dr. Sunita Changkakati is a prominent social worker and human rights advocate from Assam, India, whose pioneering efforts over the past three decades have significantly impacted the fields of child protection and women’s empowerment. Born on March 31, 1961, and holding a Ph.D. in Political Science from Gauhati University, Dr. Changkakati has devoted her life to the upliftment of marginalized communities, especially women and children in conflict-prone and underserved regions of Assam.
-
-A grassroots changemaker, she co-founded the Assam Centre for Rural Development (ACRD) in 1995. This Guwahati-based NGO has been a driving force in promoting self-help groups (SHGs), vocational training, and livelihood opportunities for rural women in districts like Baksa, Kamrup, and Udalguri. Her initiatives have empowered hundreds of women through income-generating activities such as handloom weaving, Eri silk production, pig farming, and financial literacy, facilitating economic self-reliance and social dignity.
-
-Dr. Changkakati has also made profound contributions to child welfare. Under the National Child Labour Project, she established four non-formal education centres in remote areas to rehabilitate child labourers, many of whom have been successfully mainstreamed into formal education. She worked intensively to include children with disabilities into regular schools, advocating for accessible education and societal acceptance.
-
-One of her most transformative initiatives is *Navajeevan*, a rehabilitation home she established in 2009 for female survivors of human trafficking and abuse. The home provides shelter, education, counseling, and vocational training to help survivors rebuild their lives. It has since evolved into a registered Children’s Home under the Juvenile Justice Act, 2015, providing safe and nurturing spaces for over 100 children affected by child labour, marriage, and sexual abuse.
-
-In her tenure as Chairperson of the Assam State Commission for Protection of Child Rights (2017–2023), Dr. Changkakati directly intervened in over 500 child rights violation cases. She responded to emerging issues during the COVID-19 pandemic by launching mental health awareness programs for children and families. Her work has shaped policies and brought attention to previously neglected areas like child trafficking, gender-based violence, and inclusive education.
-
-Her advocacy extends beyond direct service. She is an accomplished author of six books and the producer of a documentary, *Slaughtered Dream* (2017), which highlights the plight of trafficking survivors. Her writings and media presence continue to influence public discourse and promote social justice.
-
-In recognition of her outstanding contributions, Dr. Changkakati received the Chandraprabha Saikiani Award from the Government of Assam in 2024. Despite facing financial constraints and operating in challenging, insurgency-affected regions, her unwavering commitment to human dignity has made her a beacon of hope.
-
-Today, Dr. Sunita Changkakati continues her mission through ACRD and *Navajeevan*, embodying resilience, compassion, and transformative leadership. Her legacy lies not only in the services she has provided but in the systemic changes she has inspired across Assam’s socio-political landscape.
-
+            Dr. Sunita Changkakati is a prominent social worker and human rights
+            advocate from Assam, India, whose pioneering efforts over the past
+            three decades have significantly impacted the fields of child
+            protection and women’s empowerment. Born on March 31, 1961, and
+            holding a Ph.D. in Political Science from Gauhati University, Dr.
+            Changkakati has devoted her life to the upliftment of marginalized
+            communities, especially women and children in conflict-prone and
+            underserved regions of Assam. A grassroots changemaker, she
+            co-founded the Assam Centre for Rural Development (ACRD) in 1995.
+            This Guwahati-based NGO has been a driving force in promoting
+            self-help groups (SHGs), vocational training, and livelihood
+            opportunities for rural women in districts like Baksa, Kamrup, and
+            Udalguri. Her initiatives have empowered hundreds of women through
+            income-generating activities such as handloom weaving, Eri silk
+            production, pig farming, and financial literacy, facilitating
+            economic self-reliance and social dignity. Dr. Changkakati has also
+            made profound contributions to child welfare. Under the National
+            Child Labour Project, she established four non-formal education
+            centres in remote areas to rehabilitate child labourers, many of
+            whom have been successfully mainstreamed into formal education. She
+            worked intensively to include children with disabilities into
+            regular schools, advocating for accessible education and societal
+            acceptance. One of her most transformative initiatives is
+            Navajeevan, a rehabilitation home she established in 2009 for
+            female survivors of human trafficking and abuse. The home provides
+            shelter, education, counseling, and vocational training to help
+            survivors rebuild their lives. It has since evolved into a
+            registered Children’s Home under the Juvenile Justice Act, 2015,
+            providing safe and nurturing spaces for over 100 children affected
+            by child labour, marriage, and sexual abuse. In her tenure as
+            Chairperson of the Assam State Commission for Protection of Child
+            Rights (2017–2023), Dr. Changkakati directly intervened in over 500
+            child rights violation cases. She responded to emerging issues
+            during the COVID-19 pandemic by launching mental health awareness
+            programs for children and families. Her work has shaped policies and
+            brought attention to previously neglected areas like child
+            trafficking, gender-based violence, and inclusive education. Her
+            advocacy extends beyond direct service. She is an accomplished
+            author of six books and the producer of a documentary, *Slaughtered
+            Dream* (2017), which highlights the plight of trafficking survivors.
+            Her writings and media presence continue to influence public
+            discourse and promote social justice. In recognition of her
+            outstanding contributions, Dr. Changkakati received the
+            Chandraprabha Saikiani Award from the Government of Assam in 2024.
+            Despite facing financial constraints and operating in challenging,
+            insurgency-affected regions, her unwavering commitment to human
+            dignity has made her a beacon of hope. Today, Dr. Sunita Changkakati
+            continues her mission through ACRD and Navajeevan, embodying
+            resilience, compassion, and transformative leadership. Her legacy
+            lies not only in the services she has provided but in the systemic
+            changes she has inspired across Assam’s socio-political landscape.
           </p>
           <motion.a
             variants={childVariants}
@@ -66,7 +100,7 @@ Today, Dr. Sunita Changkakati continues her mission through ACRD and *Navajeevan
           animate={{ opacity: 1, scale: 1, y: 0 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="md:w-1/3 flex flex-col items-center -mt-16"
+          className="md:w-1/3 flex flex-col items-center -mt-16 md:-mt-52"
         >
           <motion.img
             src={profilePicss}
