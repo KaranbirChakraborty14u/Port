@@ -9,21 +9,21 @@ const timelineDatas = [
     image: journeyPic,
     title: "Birth In Assam",
     description:
-      "Amit Shah was born to Gujarati parents Mrs. Kusumben and Mr. Anilchandra Shah on October 22, 1964 in Mumbai. He. Amit Shah was born to Gujarati parents Mrs. Kusumben and Mr. Anilchandra Shah on October 22, 1964 in Mumbai. Amit Shah was born to Gujarati parents Mrs. Kusumben and Mr. Anilchandra Shah on October 22, 1964 in Mumbai.",
+      "Born in 1961 to renowned anthropologist Tapan Kumar Mazinder Baruah and Aruna Baruah, who is the youngest daughter of Lokopriya Gopinath Bordoloi. She is youngest among four sibling. Most of her childhood was spent in Tezu where her father was posted.",
   },
   {
-    year: "1980",
+    year: "1978",
     image: journeyPic,
-    title: "Schooling Days",
+    title: "College Days",
     description:
-      "During his schooling, Amit Shah showed great interest in debates, history, and Indian politics, During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics ",
+      "In 1978 Dr Sunita Changkakati joined Cotton College to enrol herself in B.A with Hons in Political Science. During College she was actively involved in the Assam Andolan Movement. She was part of the key youth brigades.",
   },
   {
-    year: "1982",
+    year: "1988-92",
     image: journeyPic,
-    title: "College Life",
+    title: "PhD",
     description:
-      "In 1982, he joined college and began taking active interest in student organizations and social work. During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
+      "She completed her PhD in Political science from Guahati University where dissertation was on “Impact of Urbanisation & Modernisation in the tribal villages of Assam. A comparative study of Rabha tribes in Odalbakra & Rajapara Villages”. As part of her research, she spent a lot of time in villages of Odalbakra and Rajapara studying & researching their ways of life especially the cultural, religious and socio-economic aspects.",
   },
   {
     year: "1987",
@@ -33,11 +33,11 @@ const timelineDatas = [
       "Amit Shah started his political journey through student wings and gradually became known for his leadership. During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
   },
   {
-    year: "1989",
+    year: "1993",
     image: journeyPic,
-    title: "Major Breakthrough",
+    title: "Professional Career",
     description:
-      "By 1989, Amit Shah had become a recognizable name in his constituency.During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
+      "In 1993 Dr Sunita joined District Primary Education Programme (Govt. of Asam) as a consultant and from there she moved to Assam Mahila Samata Society as a Gender consultany",
   },
   {
     year: "1995",
@@ -47,20 +47,77 @@ const timelineDatas = [
       "In 1995, he got a major opportunity in the state politics, marking the beginning of a new phase.During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
   },
   {
+    year: "1995",
+    image: journeyPic,
+    title: "CO Founding ACRD",
+    description:
+      "After working for a couple of years for different govt schemes, she realised that there is a need for a social platform through which she could work issues such as women empowerment, poverty, child rights at a grassroots level. These ideas gave birth to Assam Centre for Rural Development (ACRD),  an NGO Dr Sunita Changkakati co-founded with Dr. Lily Mazinder Baruah.",
+  },
+  {
     year: "1997",
     image: journeyPic,
-    title: "Leadership Roles",
+    title: "Executive Director",
     description:
-      "Amit Shah took up leadership roles and was acknowledged as a skilled strategist.During his schooling, Amit Shah showed great interest in debates, history, and Indian politics,During his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
+      "After working in the capacity as a secretary of the organisation for the first 2 years, she was made the Executive Director. She worked in this capacity till 2014 growing the organisation leaps and bounds.",
   },
   {
     year: "1999",
     image: journeyPic,
-    title: "National Recognition",
+    title: "Vocational Training and Skill Development Centre",
     description:
-      "By 1999, he had earned national recognition in political circles. During his schooling, Amit Shah showed great interest in debates, history, and Indian politicsDuring his schooling, Amit Shah showed great interest in debates, history, and Indian politicsDuring his schooling, Amit Shah showed great interest in debates, history, and Indian politics",
+      "In 1999 she started a training centre named VTSDC in Chayani Borduar area which mainly focused on livelihood and skill development of the villagers.",
+  },
+  {
+    year: "2005",
+    image: journeyPic,
+    title: "Author",
+    description:
+      "In 2005 Dr Sunita started here journey as a author with her first book called Surya Kalanka, a collection of three Assamese short stories. This started a decades long passion on writing different books. Prior to this book she had already been writing on various social issues on different local newspapers as a columnist.",
+  },
+  {
+    year: "2009",
+    image: journeyPic,
+    title: "Navajeevan",
+    description:
+      "Navajeevan Rehabilitation Home was started in 2009 under ACRD to act as a shelter home for all the trafficked victims from various different districts of Assam. Navajeevan has been a huge success where so far more than 200 trafficked victims have been rehabilitated. The girls in Navajeevan are given various different training and education to make sure that the trafficked victims are taken well care of and have the capacity to lead a normal life. Navajeevan is also registered as a Children’s Home under Juvenile Justice Act.",
+  },
+  {
+    year: "2014",
+    image: journeyPic,
+    title: "BJP",
+    description:
+      "In 2014 Dr Sunita joined Bharatiya Janata Party inspired by the passion and leadership of Hon PM Shri Narendra Modi. She wanted to be part of the social change under Narendra Modi where she could serve her nation in even a bigger way.",
+  },
+  {
+    year: "2017–2023",
+    image: journeyPic,
+    title: "Leadership in Child Rights & Public Advocacy",
+    description: `
+      Dr. Sunita was appointed as the Chairperson of the Assam State Commission for Protection of Child Rights (ASCPCR). 
+      Under her leadership, the commission intervened in over 500 cases involving child abuse, child marriage, and trafficking. 
+      Several workshops were also conducted on the New Education Policy, child trafficking, and the Right to Education (RTE).
+
+      Key issues addressed as Chairperson since 2017:
+      1. Child Rights Violation cases
+      2. Protection of Children from Sexual Offences (POCSO) cases
+      3. Child Labour cases
+      4. Corporal Punishment cases
+      5. Child Marriage cases
+      6. Children in Need of Care and Protection (CNCP)
+      7. Right to Education (RTE) cases
+      8. Child Trafficking, Missing, and Abduction cases
+      9. Other cases: Cyber-crime, conflict with law, substance abuse, illegal adoption
+    `,
+  },
+  {
+    year: "2024",
+    image: journeyPic,
+    title: "Chandraprabha Saikiani Award",
+    description:
+      "She was chosen to be the recipient of Chandraprabha Saikiani Award for Social Work for women and children for the year 2024 by the Govt. of Assam on Bishnu Rabha Diwas, 2024.",
   },
 ];
+
 
 const Journey = () => {
 
